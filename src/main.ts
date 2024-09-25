@@ -8,7 +8,7 @@ const NUMBER_OR_ROWS: number = 4;
 const NUMBER_OR_COLUMNS: number = 4;
 
 const gridContainer: HTMLDivElement = createGridContainer();
-Array(NUMBER_OF_TILES).fill(0).forEach((val, index) => gridContainer.appendChild(createTile(index)));
+Array(NUMBER_OF_TILES).fill(0).forEach((_, index) => gridContainer.appendChild(createTile(index)));
 document.querySelector<HTMLDivElement>('#app')!.appendChild(gridContainer);
 
 function createGridContainer(): HTMLDivElement {

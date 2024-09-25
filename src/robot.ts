@@ -127,23 +127,18 @@ export class Robot {
     }
 
     private rotateAntiClockWise(): void {
-        let rotationAngel: number = 0;
         switch (this.direction) {
             case Facing.Up:
                 this.direction = Facing.Left;
-                rotationAngel = -270;
                 break;
             case Facing.Down:
                 this.direction = Facing.Right;
-                rotationAngel = -90;
                 break;
             case Facing.Left:
                 this.direction = Facing.Down;
-                rotationAngel = -360;
                 break;
             case Facing.Right:
                 this.direction = Facing.Up;
-                rotationAngel = -180;
                 break;
             default:
                 break;
